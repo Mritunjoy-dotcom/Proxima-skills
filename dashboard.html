@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - Proxima</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+    }
+    .main-header {
+      background: linear-gradient(90deg, #4b6cb7, #182848);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffd166;
+    }
+    nav a.active {
+      border-bottom: 2px solid #ffd166;
+      padding-bottom: 2px;
+    }
+    .dashboard-container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 25px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+      animation: fadeUp 0.5s ease;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .section {
+      margin-bottom: 35px;
+    }
+    h2 {
+      color: #182848;
+      border-left: 5px solid #4b6cb7;
+      padding-left: 10px;
+    }
+    button {
+      background-color: #4b6cb7;
+      color: white;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 15px;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #355092;
+    }
+    input[type="file"] {
+      margin-top: 10px;
+    }
+    canvas {
+      margin-top: 20px;
+    }
+    #uploadMsg {
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header class="main-header">
+    <h1>Welcome to Proxima Dashboard</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="jobs.html">Jobs</a>
+      <a href="apply.html">Apply</a>
+      <a href="profile.html">Profile</a>
+      <a href="dashboard.html" class="active">Dashboard</a>
+    </nav>
+  </header>
+
+  <main class="dashboard-container">
+    <section class="section">
+      <h2>👤 Profile Overview</h2>
+      <p><strong>Name:</strong> <span id="displayName">Loading...</span></p>
+      <p><strong>Email:</strong> <span id="displayEmail">Loading...</span></p>
+      <p><strong>Location:</strong> Kolkata, India</p>
+    </section>
+
+    <section class="section">
+      <h2>📊 Application Summary</h2>
+      <canvas id="jobChart" width="400" height="200"></canvas>
+    </section>
+
+    <section class="section">
+      <h2>📁 Upload Your Resume</h2>
+      <input type="file" id="resume" />
+      <p style="margin-top: 10px; color: green;" id="uploadMsg"></p>
+    </section>
+
+    <section class="section">
+      <button onclick="logout()">🔒 Logout</button>
+    </section>
+  </main>
+
+  <script>
+  // Redirect to login if not logged in
+  const user = JSON.parse(localStorage.getItem("user"));
+  if (!user) {
+    window.location.href = "login.html";
+  }
+
+  // Display user info if logged in
+  document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("displayName").innerText = user?.name || "N/A";
+    document.getElementById("displayEmail").innerText = user?.email || "N/A";
+  });
+
+  function logout() {
+    localStorage.clear();
+    alert("✅ You have been logged out.");
+    window.location.href = "login.html";
+  }
+</script>
+
+</body>
+</html>
+

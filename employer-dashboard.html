@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employer Dashboard - Easy Life</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-600 text-white p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">🏢 Employer Dashboard</h1>
+    <button onclick="logout()" class="bg-red-500 px-4 py-2 rounded-lg hover:bg-red-600">Logout</button>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="max-w-6xl mx-auto mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+
+    <!-- Profile Card -->
+    <div class="bg-white p-6 rounded-xl shadow-md">
+      <h2 class="text-lg font-semibold text-gray-700 mb-4">👤 Employer Profile</h2>
+      <p><strong>Company:</strong> <span id="companyName">Loading...</span></p>
+      <p><strong>Email:</strong> <span id="email">Loading...</span></p>
+      <p><strong>Phone:</strong> <span id="phone">Loading...</span></p>
+    </div>
+
+    <!-- Job Post Form -->
+    <div class="bg-white p-6 rounded-xl shadow-md md:col-span-2">
+      <h2 class="text-lg font-semibold text-gray-700 mb-4">📌 Post a Job</h2>
+      <form id="jobForm" class="space-y-4">
+        <input type="text" id="title" placeholder="Job Title" required
+          class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500">
+        <textarea id="description" placeholder="Job Description" required
+          class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500"></textarea>
+        <input type="text" id="location" placeholder="Location" required
+          class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500">
+        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
+          ➕ Post Job
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- Job Listings -->
+  <div class="max-w-6xl mx-auto mt-8 bg-white p-6 rounded-xl shadow-md">
+    <h2 class="text-lg font-semibold text-gray-700 mb-4">📄 Your Posted Jobs</h2>
+    <ul id="jobList" class="space-y-3">
+      <li class="text-gray-500">No jobs posted yet...</li>
+    </ul>
+  </div>
+
+  <script>
+    // ✅ Dummy profile load (you can fetch from backend)
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("companyName").textContent = "Proxima Skills Ltd.";
+      document.getElementById("email").textContent = "hr@proximaskills.com";
+      document.getElementById("phone").textContent = "+91 98765 43210";
+    });
+
+    // ✅ Job Post Script
+    document.getElementById("jobForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const title = document.getElementById("title").value;
+      const description = document.getElementById("description").value;
+      const location = document.getElementById("location").value;
+
+      const jobList = document.getElementById("jobList");
+      const jobItem = document.createElement("li");
+      jobItem.className = "p-4 bg-gray-100 rounded-lg shadow";
+      jobItem.innerHTML = `<h3 class="font-semibold">${title}</h3>
+        <p class="text-sm text-gray-600">${description}</p>
+        <p class="text-xs text-gray-500">📍 ${location}</p>`;
+      jobList.appendChild(jobItem);
+
+      // clear form
+      document.getElementById("jobForm").reset();
+    });
+
+    // ✅ Logout function
+    function logout() {
+      localStorage.removeItem("employerToken");
+      alert("Logged out successfully!");
+      window.location.href = "employer-login.html";
+    }
+  </script>
+
+</body>
+</html>
+

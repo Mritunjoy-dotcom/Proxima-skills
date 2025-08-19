@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Profile - Proxima</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ===== HEADER ===== */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .navbar-left {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .navbar-left img {
+      height: 40px;
+    }
+
+    .navbar-center a {
+      text-decoration: none;
+      color: #222;
+      margin: 0 12px;
+      font-weight: 500;
+    }
+
+    .navbar-center a:hover {
+      color: #007bff;
+    }
+
+    .navbar-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      padding: 5px 12px;
+    }
+
+    .search-box input {
+      border: none;
+      outline: none;
+      padding: 5px;
+    }
+
+    .login-btn, .register-btn {
+      padding: 6px 14px;
+      border-radius: 20px;
+      border: 1px solid #007bff;
+      background: none;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .login-btn {
+      color: #007bff;
+    }
+
+    .register-btn {
+      background: #e63946;
+      color: white;
+      border: none;
+    }
+
+    .login-btn:hover {
+      background: #007bff;
+      color: white;
+    }
+
+    .register-btn:hover {
+      background: #d62828;
+    }
+
+    /* ===== PROFILE CONTENT ===== */
+    .profile-container {
+      max-width: 700px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: #ddd;
+      margin-bottom: 15px;
+      display: inline-block;
+    }
+
+    .profile-info p {
+      font-size: 16px;
+      margin: 6px 0;
+    }
+
+    .btn {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="navbar-left">
+      <img src="image/logo.png" alt="Proxima Logo">
+    </div>
+    <div class="navbar-center">
+      <a href="index.html">Home</a>
+      <a href="jobs.html">Jobs</a>
+      <a href="companies.html">Companies</a>
+      <a href="services.html">Services</a>
+    </div>
+    <div class="navbar-right">
+      <div class="search-box">
+        <input type="text" placeholder="Search jobs here">
+        🔍
+      </div>
+      <button class="login-btn" onclick="window.location.href='login.html'">Login</button>
+      <button class="register-btn" onclick="window.location.href='register.html'">Register</button>
+    </div>
+  </header>
+
+  <!-- PROFILE SECTION -->
+  <div class="profile-container">
+    <div class="profile-pic"></div>
+    <h2 id="userName">Loading...</h2>
+    <div class="profile-info">
+      <p><strong>Email:</strong> <span id="userEmail">Loading...</span></p>
+      <p><strong>Phone:</strong> <span id="userPhone">Loading...</span></p>
+    </div>
+    <button class="btn" onclick="alert('Update profile coming soon!')">Update Profile</button>
+  </div>
+
+  <script>
+    const token = localStorage.getItem("authToken");
+
+    fetch("/api/checkAuth", {
+      headers: { "Authorization": "Bearer " + token }
+    })
+    .then(res => res.json())
+    .then(data => {
+      if (!data.loggedIn) {
+        window.location.href = "login.html";
+      } else {
+        const user = JSON.parse(localStorage.getItem("user"));
+        document.getElementById("userName").innerText = user.name;
+        document.getElementById("userEmail").innerText = user.email;
+        document.getElementById("userPhone").innerText = user.mobile || "Not Provided";
+      }
+    });
+  </script>
+
+</body>
+</html>
