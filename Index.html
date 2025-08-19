@@ -1,561 +1,527 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>jobsfind4u – Job Portal</title>
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-  integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <style>
+    body {
+      font-family: "Crimson Pro", serif;
+      margin: 0;
+      background: #f9f9fc;
+      color: #333;
+    }
+  </style>
 </head>
 <body>
-
-<header class="main-header">
-  <div class="left-nav">
-    <a href="#" class="logo-link">
-      <img src="image/portal logo.png" alt="Jobsfind4u Logo" class="logo-img h-16 w-auto">
-    </a>
-    <nav class="left-links">
-      <a href="home"class="home"></a>
-      <a href="jobs.html">Jobs</a>
-      <a href="#">Companies</a>
-    </nav>
-  </div>
-  <div class="right-links">
-  <a href="for-employer.html" class="#">For Employers</a>
-  <a href="login.html" class="px-4 py-1 border border-blue-600 text-blue-600 rounded-full hover:bg-blue-50">Login</a>
-  <a href="register.html" class="px-4 py-1 border border-blue-600 text-blue-600 rounded-full hover:bg-red-600">Register</a>
-</div>
-
-</header>
-<section class="hero-modern">
-  <div class="hero-content">
-    <h1>Find your dream job with US</h1>
-    <p class="subtitle">5 lakh+ jobs for you to explore</p>
-
-    <div class="search-modern">
-      <input type="text" placeholder="Enter skills / designations / companies">
-      
-      <select>
-        <option>Select experience</option>
-        <option>0‑2 yrs</option>
-        <option>3‑5 yrs</option>
-        <option>5+ yrs</option>
-      </select>
-      
-      <input type="text" placeholder="Enter location">
-      
-      <button>Search</button>
+  <header class="main-header flex justify-between items-center px-10 py-5 bg-white shadow">
+    <div class="left-nav flex items-center gap-10">
+      <a href="#" class="logo-link">
+        <img src="image/portal_logo.png" alt="jobsfind4u Logo" class="logo-img h-16 w-auto" />
+      </a>
+      <nav class="left-links flex gap-7 items-center">
+        <a href="jobs.html" class="text-[#001f4d] text-lg font-medium hover:underline">Jobs</a>
+        <a href="#" class="text-[#001f4d] text-lg font-medium hover:underline">Companies</a>
+        <a href="for-employer.html" class="text-[#001f4d] text-lg font-medium hover:underline">For Employers</a>
+      </nav>
     </div>
-  </div>
-</section>
+    <div class="right-links flex gap-3 items-center">
+      <a href="login.html" class="px-4 py-1 border border-blue-600 text-blue-600 rounded-full hover:bg-blue-50 transition">Login</a>
+      <a href="register.html" class="px-4 py-1 border border-blue-600 text-blue-600 rounded-full hover:bg-red-600 transition">Register</a>
+    </div>
+  </header>
 
-
-    <!-- 🚀 Mock Interview CTA Section -->
-    <div class="relative max-w-[900px] mx-auto my-10 p-10 text-center rounded-xl overflow-hidden">
-  <!-- Background Video -->
-  <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
-    <source src="../video/vbg.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-
+<!-- HERO IMAGE BANNER WITH OVERLAYED SEARCH BAR -->
+<section class="relative w-full h-[440px] md:h-[520px] overflow-hidden">
+  <!-- Image Background -->
+  <img src="image/Tired man from work.gif" alt="Background Image" class="absolute top-0 left-0 w-full h-full object-cover object-center" />
   <!-- Dark Overlay -->
-  <div class="absolute inset-0  z-0"></div>
-
-  <!-- Content -->
-  <h2 class="relative z-10 text-3xl font-bold text-white mb-4">Join Jobsfind4u</h2>
-  <p class="relative z-10 text-lg text-gray-200 mb-6">Prepare for your next big opportunity with AI mock interviews.</p>
-  <a href="#"
-     class="relative z-10 inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition">
-    Get Started
-  </a>
-</div>
-
-</section>
-
-<section class="py-8 bg-gray-50">
-  <div class="max-w-6xl mx-auto px-4">
-    <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">Popular Categories</h2>
-
-    <div class="flex flex-wrap justify-center gap-4">
-      <button class="flex items-center gap-2 px-5 py-2 bg-white border border-gray-300 rounded-full shadow-sm hover:shadow-md hover:border-blue-500 hover:text-blue-600 transition">
-        <i class="fas fa-home text-blue-500"></i> Remote
-      </button>
-
-      <button class="flex items-center gap-2 px-5 py-2 bg-white border border-gray-300 rounded-full shadow-sm hover:shadow-md hover:border-blue-500 hover:text-blue-600 transition">
-        <i class="fas fa-building text-blue-500"></i> MNC
-      </button>
-
-      <button class="flex items-center gap-2 px-5 py-2 bg-white border border-gray-300 rounded-full shadow-sm hover:shadow-md hover:border-blue-500 hover:text-blue-600 transition">
-        <i class="fas fa-user-graduate text-blue-500"></i> Internship
-      </button>
-
-      <button class="flex items-center gap-2 px-5 py-2 bg-white border border-gray-300 rounded-full shadow-sm hover:shadow-md hover:border-blue-500 hover:text-blue-600 transition">
-        <i class="fas fa-user-plus text-blue-500"></i> Fresher
-      </button>
-
-      <button class="flex items-center gap-2 px-5 py-2 bg-white border border-gray-300 rounded-full shadow-sm hover:shadow-md hover:border-blue-500 hover:text-blue-600 transition">
-        <i class="fas fa-briefcase text-blue-500"></i> Sales
-      </button>
-
-      <button class="flex items-center gap-2 px-5 py-2 bg-white border border-gray-300 rounded-full shadow-sm hover:shadow-md hover:border-blue-500 hover:text-blue-600 transition">
-        <i class="fas fa-coins text-blue-500"></i> Banking & Finance
-      </button>
-
-      <button class="flex items-center gap-2 px-5 py-2 bg-white border border-gray-300 rounded-full shadow-sm hover:shadow-md hover:border-blue-500 hover:text-blue-600 transition">
-        <i class="fas fa-cogs text-blue-500"></i> Engineering
-      </button>
-
-      <button class="flex items-center gap-2 px-5 py-2 bg-white border border-gray-300 rounded-full shadow-sm hover:shadow-md hover:border-blue-500 hover:text-blue-600 transition">
-        <i class="fas fa-users text-blue-500"></i> HR
-      </button>
-
-      <button class="flex items-center gap-2 px-5 py-2 bg-white border border-gray-300 rounded-full shadow-sm hover:shadow-md hover:border-blue-500 hover:text-blue-600 transition">
-        <i class="fas fa-award text-blue-500"></i> Fortune 500
-      </button>
-
-      <button class="flex items-center gap-2 px-5 py-2 bg-white border border-gray-300 rounded-full shadow-sm hover:shadow-md hover:border-blue-500 hover:text-blue-600 transition">
-        <i class="fas fa-chart-line text-blue-500"></i> Data Science
-      </button>
-
-      <button class="flex items-center gap-2 px-5 py-2 bg-white border border-gray-300 rounded-full shadow-sm hover:shadow-md hover:border-blue-500 hover:text-blue-600 transition">
-        <i class="fas fa-chart-bar text-blue-500"></i> Marketing
-      </button>
-
-      <button class="flex items-center gap-2 px-5 py-2 bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition">
-        <i class="fas fa-chevron-right"></i> View More
-      </button>
-    </div>
-  </div>
-</section>
-
-<!-- Font Awesome CDN -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-
-
-<section class="bg-gray-50 py-12">
-  <div class="max-w-7xl mx-auto px-4">
-    <h2 class="text-3xl font-bold text-center text-[#001f4d] mb-10">Featured Jobs</h2>
-
-    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-      <!-- Job Card -->
-      <div class="bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300 border border-gray-100 text-center">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Logo" class="h-12 mx-auto mb-4">
-        <h3 class="text-xl font-semibold text-[#001f4d] mb-3">Frontend Developer</h3>
-        <p class="text-sm"><span class="font-bold">Company:</span> Google</p>
-        <p class="text-sm"><span class="font-bold">Location:</span> Bangalore, India</p>
-        <p class="text-sm mb-4"><span class="font-bold">Salary:</span> ₹10–15 LPA</p>
-        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg transition-colors">
-          Apply Now
-        </button>
-      </div>
-
-      <!-- Job Card -->
-      <div class="bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300 border border-gray-100 text-center">
-        <img src="image/unilever.png" alt="Unilever Logo" class="h-12 mx-auto mb-4">
-        <h3 class="text-xl font-semibold text-[#001f4d] mb-3">Marketing Manager</h3>
-        <p class="text-sm"><span class="font-bold">Company:</span> Unilever</p>
-        <p class="text-sm"><span class="font-bold">Location:</span> Mumbai, India</p>
-        <p class="text-sm mb-4"><span class="font-bold">Salary:</span> ₹8–12 LPA</p>
-        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg transition-colors">
-          Apply Now
-        </button>
-      </div>
-
-      <!-- Job Card -->
-      <div class="bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300 border border-gray-100 text-center">
-        <img src="image/tcss.png" alt="TCS Logo" class="h-12 mx-auto mb-4">
-        <h3 class="text-xl font-semibold text-[#001f4d] mb-3">Data Scientist</h3>
-        <p class="text-sm"><span class="font-bold">Company:</span> TCS</p>
-        <p class="text-sm"><span class="font-bold">Location:</span> Hyderabad, India</p>
-        <p class="text-sm mb-4"><span class="font-bold">Salary:</span> ₹12–18 LPA</p>
-        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg transition-colors">
-          Apply Now
-        </button>
-      </div>
-    </div>
-
-    <!-- View More Jobs Button -->
-    <div class="mt-10 text-center">
-      <a href="/jobs" class="inline-block bg-[#001f4d] hover:bg-blue-800 text-white font-semibold py-3 px-8 rounded-full transition-colors shadow-md">
-        View More Jobs
-      </a>
-    </div>
-  </div>
-</section>
-
-
-<section class="py-10 bg-white">
-  <div class="max-w-7xl mx-auto px-4">
-    <!-- Section Title -->
-    <h2 class="text-2xl font-bold text-center mb-8">
-      Featured companies actively hiring
-    </h2>
-
-    <!-- Cards Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-      
-      <!-- Company Card -->
-      <div class="bg-white border rounded-xl shadow-sm p-4 text-center hover:shadow-lg transition">
-        <img src="image/cardinal health.png" alt="Cardinal Health" class="h-12 mx-auto mb-3">
-        <h3 class="font-semibold text-gray-900">Cardinal Health</h3>
-        <p class="flex items-center justify-center text-sm text-gray-500 mt-1">
-          <span class="text-yellow-500 mr-1">★</span> 4.0 · 216 reviews
-        </p>
-        <p class="text-sm text-gray-600 mt-2">Together let's pursue even better.</p>
-        <button class="mt-4 px-5 py-2 bg-blue-100 text-blue-600 font-medium rounded-full hover:bg-blue-200">
-          View jobs
-        </button>
-      </div>
-
-      <!-- Company Card -->
-      <div class="bg-white border rounded-xl shadow-sm p-4 text-center hover:shadow-lg transition">
-        <img src="image/tcs.png" alt="TCS" class="h-12 mx-auto mb-3">
-        <h3 class="font-semibold text-gray-900">Tata Consultancy Services</h3>
-        <p class="flex items-center justify-center text-sm text-gray-500 mt-1">
-          <span class="text-yellow-500 mr-1">★</span> 3.5 · 101.1K+ reviews
-        </p>
-        <p class="text-sm text-gray-600 mt-2">Explore challenging and exciting opportunities at TCS.</p>
-        <button class="mt-4 px-5 py-2 bg-blue-100 text-blue-600 font-medium rounded-full hover:bg-blue-200">
-          View jobs
-        </button>
-      </div>
-
-      <!-- Company Card -->
-      <div class="bg-white border rounded-xl shadow-sm p-4 text-center hover:shadow-lg transition">
-        <img src="image/jio.png" alt="Jio" class="h-12 mx-auto mb-3">
-        <h3 class="font-semibold text-gray-900">Jio</h3>
-        <p class="flex items-center justify-center text-sm text-gray-500 mt-1">
-          <span class="text-yellow-500 mr-1">★</span> 4.2 · 27.2K+ reviews
-        </p>
-        <p class="text-sm text-gray-600 mt-2">True 5G is here to unlock the limitless era.</p>
-        <button class="mt-4 px-5 py-2 bg-blue-100 text-blue-600 font-medium rounded-full hover:bg-blue-200">
-          View jobs
-        </button>
-      </div>
-
-      <!-- Company Card -->
-      <div class="bg-white border rounded-xl shadow-sm p-4 text-center hover:shadow-lg transition">
-        <img src="image/intellect.png" alt="Intellect Design Arena" class="h-12 mx-auto mb-3">
-        <h3 class="font-semibold text-gray-900">Intellect Design Arena</h3>
-        <p class="flex items-center justify-center text-sm text-gray-500 mt-1">
-          <span class="text-yellow-500 mr-1">★</span> 3.9 · 2.2K+ reviews
-        </p>
-        <p class="text-sm text-gray-600 mt-2">World's largest, future-ready Enterprise FinTech Company.</p>
-        <button class="mt-4 px-5 py-2 bg-blue-100 text-blue-600 font-medium rounded-full hover:bg-blue-200">
-          View jobs
-        </button>
-      </div>
-
-      <!-- Company Card -->
-      <div class="bg-white border rounded-xl shadow-sm p-4 text-center hover:shadow-lg transition">
-        <img src="image/datamatics.png" alt="Datamatics" class="h-12 mx-auto mb-3">
-        <h3 class="font-semibold text-gray-900">Datamatics</h3>
-        <p class="flex items-center justify-center text-sm text-gray-500 mt-1">
-          <span class="text-yellow-500 mr-1">★</span> 3.4 · 1.8K+ reviews
-        </p>
-        <p class="text-sm text-gray-600 mt-2">Global digital technology company.</p>
-        <button class="mt-4 px-5 py-2 bg-blue-100 text-blue-600 font-medium rounded-full hover:bg-blue-200">
-          View jobs
-        </button>
-      </div>
-
-    </div>
-
-    <!-- View All Button -->
-    <div class="text-center mt-8">
-      <button class="px-6 py-2 border border-blue-400 text-blue-500 rounded-full hover:bg-blue-50">
-        View all companies
-      </button>
-    </div>
-  </div>
-</section>
-
-
-<section class="flex flex-wrap items-center gap-6 bg-orange-50 p-6 rounded-xl">
-  <!-- Left Side -->
-  <div class="flex-shrink-0 max-w-sm">
-    <img src="image/jobs-illustration.png" alt="Discover jobs illustration" class="w-60 h-auto">
-    <h3 class="text-2xl font-bold mt-4 text-gray-900">Discover jobs across popular roles</h3>
-    <p class="text-gray-600 mt-2">
-      Select a role and we'll show you relevant jobs for it!
+  <div class="absolute inset-0 bg-black/10"></div>
+  <!-- Overlaid Content -->
+  <div class="absolute inset-0 flex flex-col items-center justify-center text-center z-10 px-4">
+    <h1 class="text-4xl md:text-8xl font-bold text-white mb-3 drop-shadow-lg">
+      Find your Dream Job with Us
+    </h1>
+    <p class="subtitle text-lg md:text-5xl text-blue-50 mb-8 drop-shadow">
+      5 lakh+ jobs for you to explore !
     </p>
-  </div>
-
-  <!-- Right Side -->
-  <div class="bg-white shadow-lg rounded-xl p-6 flex-1">
-    <div class="grid grid-cols-2 gap-4">
-      <!-- Job Card -->
-      <a href="#" class="flex justify-between items-center p-4 border rounded-lg hover:shadow-md">
-        <div>
-          <h4 class="font-semibold text-gray-900">Full Stack Developer</h4>
-          <p class="text-sm text-gray-500">20.7K+ Jobs</p>
-        </div>
-        <i class="fas fa-chevron-right text-gray-400"></i>
-      </a>
-
-      <a href="#" class="flex justify-between items-center p-4 border rounded-lg hover:shadow-md">
-        <div>
-          <h4 class="font-semibold text-gray-900">Mobile / App Developer</h4>
-          <p class="text-sm text-gray-500">3.1K+ Jobs</p>
-        </div>
-        <i class="fas fa-chevron-right text-gray-400"></i>
-      </a>
-
-      <a href="#" class="flex justify-between items-center p-4 border rounded-lg hover:shadow-md">
-        <div>
-          <h4 class="font-semibold text-gray-900">Front End Developer</h4>
-          <p class="text-sm text-gray-500">5.3K+ Jobs</p>
-        </div>
-        <i class="fas fa-chevron-right text-gray-400"></i>
-      </a>
-
-      <a href="#" class="flex justify-between items-center p-4 border rounded-lg hover:shadow-md">
-        <div>
-          <h4 class="font-semibold text-gray-900">DevOps Engineer</h4>
-          <p class="text-sm text-gray-500">3.2K+ Jobs</p>
-        </div>
-        <i class="fas fa-chevron-right text-gray-400"></i>
-      </a>
-
-      <a href="#" class="flex justify-between items-center p-4 border rounded-lg hover:shadow-md">
-        <div>
-          <h4 class="font-semibold text-gray-900">Engineering Manager</h4>
-          <p class="text-sm text-gray-500">1.6K+ Jobs</p>
-        </div>
-        <i class="fas fa-chevron-right text-gray-400"></i>
-      </a>
-
-      <a href="#" class="flex justify-between items-center p-4 border rounded-lg hover:shadow-md">
-        <div>
-          <h4 class="font-semibold text-gray-900">Technical Lead</h4>
-          <p class="text-sm text-gray-500">11.2K+ Jobs</p>
-        </div>
-        <i class="fas fa-chevron-right text-gray-400"></i>
-      </a>
+      <!-- Search Bar -->
+      <form class="search-modern flex flex-wrap gap-4 bg-white/90 p-4 rounded-full shadow-lg max-w-4xl w-full md:w-[96%] items-center" style="backdrop-filter: blur(4px);" autocomplete="off">
+        <input type="text" placeholder="Enter skills / designations / companies" class="flex-1 min-w-[140px] bg-transparent border-0 px-5 py-3 rounded-full text-base md:text-lg outline-none" autocomplete="off" />
+        <select class="min-w-[120px] bg-transparent border-0 px-4 py-3 rounded-full text-base md:text-lg outline-none">
+          <option selected disabled>Select experience</option>
+          <option>0‑2 yrs</option>
+          <option>3‑5 yrs</option>
+          <option>5+ yrs</option>
+        </select>
+        <input type="text" placeholder="Enter location" class="flex-1 min-w-[100px] bg-transparent border-0 px-5 py-3 rounded-full text-base md:text-lg outline-none" autocomplete="off" />
+        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-full transition-all whitespace-nowrap">
+          Search
+        </button>
+      </form>
     </div>
-  </div>
+  </section>
+
+  <section class="py-8 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">Popular Categories</h2>
+      <div class="flex flex-wrap justify-center gap-4">
+        <button class="flex items-center gap-2 px-5 py-2 bg-white border border-gray-300 rounded-full shadow-sm hover:shadow-md hover:border-blue-500 hover:text-blue-600 transition">
+          <i class="fas fa-home text-blue-500"></i> Remote
+        </button>
+        <button class="flex items-center gap-2 px-5 py-2 bg-white border border-gray-300 rounded-full shadow-sm hover:shadow-md hover:border-blue-500 hover:text-blue-600 transition">
+          <i class="fas fa-building text-blue-500"></i> MNC
+        </button>
+        <button class="flex items-center gap-2 px-5 py-2 bg-white border border-gray-300 rounded-full shadow-sm hover:shadow-md hover:border-blue-500 hover:text-blue-600 transition">
+          <i class="fas fa-user-graduate text-blue-500"></i> Internship
+        </button>
+        <button class="flex items-center gap-2 px-5 py-2 bg-white border border-gray-300 rounded-full shadow-sm hover:shadow-md hover:border-blue-500 hover:text-blue-600 transition">
+          <i class="fas fa-user-plus text-blue-500"></i> Fresher
+        </button>
+        <button class="flex items-center gap-2 px-5 py-2 bg-white border border-gray-300 rounded-full shadow-sm hover:shadow-md hover:border-blue-500 hover:text-blue-600 transition">
+          <i class="fas fa-briefcase text-blue-500"></i> Sales
+        </button>
+        <button class="flex items-center gap-2 px-5 py-2 bg-white border border-gray-300 rounded-full shadow-sm hover:shadow-md hover:border-blue-500 hover:text-blue-600 transition">
+          <i class="fas fa-coins text-blue-500"></i> Banking & Finance
+        </button>
+        <button class="flex items-center gap-2 px-5 py-2 bg-white border border-gray-300 rounded-full shadow-sm hover:shadow-md hover:border-blue-500 hover:text-blue-600 transition">
+          <i class="fas fa-cogs text-blue-500"></i> Engineering
+        </button>
+        <button class="flex items-center gap-2 px-5 py-2 bg-white border border-gray-300 rounded-full shadow-sm hover:shadow-md hover:border-blue-500 hover:text-blue-600 transition">
+          <i class="fas fa-users text-blue-500"></i> HR
+        </button>
+        <button class="flex items-center gap-2 px-5 py-2 bg-white border border-gray-300 rounded-full shadow-sm hover:shadow-md hover:border-blue-500 hover:text-blue-600 transition">
+          <i class="fas fa-award text-blue-500"></i> Fortune 500
+        </button>
+        <button class="flex items-center gap-2 px-5 py-2 bg-white border border-gray-300 rounded-full shadow-sm hover:shadow-md hover:border-blue-500 hover:text-blue-600 transition">
+          <i class="fas fa-chart-line text-blue-500"></i> Data Science
+        </button>
+        <button class="flex items-center gap-2 px-5 py-2 bg-white border border-gray-300 rounded-full shadow-sm hover:shadow-md hover:border-blue-500 hover:text-blue-600 transition">
+          <i class="fas fa-chart-bar text-blue-500"></i> Marketing
+        </button>
+        <button class="flex items-center gap-2 px-5 py-2 bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition">
+          <i class="fas fa-chevron-right"></i> View More
+        </button>
+      </div>
+    </div>
+  </section>
+
+<section class="bg-gray-50 py-12 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 relative">
+    <h2 class="text-3xl font-bold text-center text-[#001f4d] mb-10">Featured Jobs</h2>
+    <div class="flex animate-scroll-jobs">
+      <!-- Original Set -->
+      <div class="flex gap-8 whitespace-nowrap">
+        <div class="bg-white rounded-2xl shadow-md p-6 border border-gray-100 text-center min-w-[280px] flex-shrink-0">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Logo" class="h-12 mx-auto mb-4" />
+          <h3 class="text-xl font-semibold text-[#001f4d] mb-3">Frontend Developer</h3>
+          <p class="text-sm"><span class="font-bold">Company:</span> Google</p>
+          <p class="text-sm"><span class="font-bold">Location:</span> Bangalore, India</p>
+          <p class="text-sm mb-4"><span class="font-bold">Salary:</span> ₹10–15 LPA</p>
+          <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg transition-colors">Apply Now</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-md p-6 border border-gray-100 text-center min-w-[280px] flex-shrink-0">
+          <img src="image/unilever.png" alt="Unilever Logo" class="h-12 mx-auto mb-4" />
+          <h3 class="text-xl font-semibold text-[#001f4d] mb-3">Marketing Manager</h3>
+          <p class="text-sm"><span class="font-bold">Company:</span> Unilever</p>
+          <p class="text-sm"><span class="font-bold">Location:</span> Mumbai, India</p>
+          <p class="text-sm mb-4"><span class="font-bold">Salary:</span> ₹8–12 LPA</p>
+          <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg transition-colors">Apply Now</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-md p-6 border border-gray-100 text-center min-w-[280px] flex-shrink-0">
+          <img src="image/tcss.png" alt="TCS Logo" class="h-12 mx-auto mb-4" />
+          <h3 class="text-xl font-semibold text-[#001f4d] mb-3">Data Scientist</h3>
+          <p class="text-sm"><span class="font-bold">Company:</span> TCS</p>
+          <p class="text-sm"><span class="font-bold">Location:</span> Hyderabad, India</p>
+          <p class="text-sm mb-4"><span class="font-bold">Salary:</span> ₹12–18 LPA</p>
+          <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg transition-colors">Apply Now</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-md p-6 border border-gray-100 text-center min-w-[280px] flex-shrink-0">
+          <img src="image/amazon.png" alt="Amazon Logo" class="h-12 mx-auto mb-4" />
+          <h3 class="text-xl font-semibold text-[#001f4d] mb-3">Backend Developer</h3>
+          <p class="text-sm"><span class="font-bold">Company:</span> Amazon</p>
+          <p class="text-sm"><span class="font-bold">Location:</span> Seattle, USA</p>
+          <p class="text-sm mb-4"><span class="font-bold">Salary:</span> $100K–$130K</p>
+          <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg transition-colors">Apply Now</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-md p-6 border border-gray-100 text-center min-w-[280px] flex-shrink-0">
+          <img src="image/miclogo.jpeg" alt="Microsoft Logo" class="h-12 mx-auto mb-4" />
+          <h3 class="text-xl font-semibold text-[#001f4d] mb-3">Cloud Engineer</h3>
+          <p class="text-sm"><span class="font-bold">Company:</span> Microsoft</p>
+          <p class="text-sm"><span class="font-bold">Location:</span> Redmond, USA</p>
+          <p class="text-sm mb-4"><span class="font-bold">Salary:</span> $110K–$140K</p>
+          <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg transition-colors">Apply Now</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-md p-6 border border-gray-100 text-center min-w-[280px] flex-shrink-0">
+          <img src="image/facebooklogo.jpeg" alt="Facebook Logo" class="h-12 mx-auto mb-4" />
+          <h3 class="text-xl font-semibold text-[#001f4d] mb-3">UI/UX Designer</h3>
+          <p class="text-sm"><span class="font-bold">Company:</span> Facebook</p>
+          <p class="text-sm"><span class="font-bold">Location:</span> Menlo Park, USA</p>
+          <p class="text-sm mb-4"><span class="font-bold">Salary:</span> $90K–$120K</p>
+          <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg transition-colors">Apply Now</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-md p-6 border border-gray-100 text-center min-w-[280px] flex-shrink-0">
+          <img src="image/ibmlogo.jpeg" alt="IBM Logo" class="h-12 mx-auto mb-4" />
+          <h3 class="text-xl font-semibold text-[#001f4d] mb-3">Data Analyst</h3>
+          <p class="text-sm"><span class="font-bold">Company:</span> IBM</p>
+          <p class="text-sm"><span class="font-bold">Location:</span> New York, USA</p>
+          <p class="text-sm mb-4"><span class="font-bold">Salary:</span> $80K–$110K</p>
+          <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg transition-colors">Apply Now</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-md p-6 border border-gray-100 text-center min-w-[280px] flex-shrink-0">
+          <img src="image/applelogo.jpeg" alt="Apple Logo" class="h-12 mx-auto mb-4" />
+          <h3 class="text-xl font-semibold text-[#001f4d] mb-3">Product Manager</h3>
+          <p class="text-sm"><span class="font-bold">Company:</span> Apple</p>
+          <p class="text-sm"><span class="font-bold">Location:</span> Cupertino, USA</p>
+          <p class="text-sm mb-4"><span class="font-bold">Salary:</span> $120K–$150K</p>
+          <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg transition-colors">Apply Now</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-md p-6 border border-gray-100 text-center min-w-[280px] flex-shrink-0">
+          <img src="image/airbnb.png" alt="Airbnb Logo" class="h-12 mx-auto mb-4" />
+          <h3 class="text-xl font-semibold text-[#001f4d] mb-3">Operations Manager</h3>
+          <p class="text-sm"><span class="font-bold">Company:</span> Airbnb</p>
+          <p class="text-sm"><span class="font-bold">Location:</span> San Francisco, USA</p>
+          <p class="text-sm mb-4"><span class="font-bold">Salary:</span> $90K–$130K</p>
+          <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg transition-colors">Apply Now</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-md p-6 border border-gray-100 text-center min-w-[280px] flex-shrink-0">
+          <img src="image/salesforce.png" alt="Salesforce Logo" class="h-12 mx-auto mb-4" />
+          <h3 class="text-xl font-semibold text-[#001f4d] mb-3">Sales Executive</h3>
+          <p class="text-sm"><span class="font-bold">Company:</span> Salesforce</p>
+          <p class="text-sm"><span class="font-bold">Location:</span> Indianapolis, USA</p>
+          <p class="text-sm mb-4"><span class="font-bold">Salary:</span> $70K–$100K</p>
+          <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg transition-colors">Apply Now</button>
+        </div>
+        <div class="bg-white rounded-2xl shadow-md p-6 border border-gray-100 text-center min-w-[280px] flex-shrink-0">
+          <img src="image/spotify.png" alt="Spotify Logo" class="h-12 mx-auto mb-4" />
+          <h3 class="text-xl font-semibold text-[#001f4d] mb-3">Content Strategist</h3>
+          <p class="text-sm"><span class="font-bold">Company:</span> Spotify</p>
+          <p class="text-sm"><span class="font-bold">Location:</span> New York, USA</p>
+          <p class="text-sm mb-4"><span class="font-bold">Salary:</span> $85K–$120K</p>
+          <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg transition-colors">Apply Now</button>
+        </div>
+      </div>
+  <style>
+    .animate-scroll-jobs {
+      animation: scrollJobs 25s linear infinite;
+      will-change: transform;
+    }
+
+    @keyframes scrollJobs {
+      0% {
+        transform: translateX(5%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
 </section>
 
-<!-- Font Awesome for icons -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-
-<section class="bg-white py-10 px-4">
-  <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-6">
-    
-    <!-- Left Side - Image & Title -->
-    <div class="bg-orange-50 rounded-2xl p-6 flex flex-col justify-between w-full lg:w-1/3">
-      <div>
-        <p class="text-sm text-gray-500 mb-3">by Proxima Skills</p>
-        <h2 class="text-2xl font-semibold mb-4">Prepare for your next interview</h2>
+  <section class="py-10 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-2xl font-bold text-center mb-8">
+        Featured Companies Actively Hiring
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div class="bg-white border rounded-xl shadow-sm p-4 text-center hover:shadow-lg transition">
+          <img src="image/cardinal health.png" alt="Cardinal Health" class="h-12 mx-auto mb-3" />
+          <h3 class="font-semibold text-gray-900">Cardinal Health</h3>
+          <p class="flex items-center justify-center text-sm text-gray-500 mt-1">
+            <span class="text-yellow-500 mr-1">★</span> 4.0 · 216 reviews
+          </p>
+          <p class="text-sm text-gray-600 mt-2">Together let's pursue even better.</p>
+          <button class="mt-4 px-5 py-2 bg-blue-100 text-blue-600 font-medium rounded-full hover:bg-blue-200">
+            View jobs
+          </button>
+        </div>
+        <div class="bg-white border rounded-xl shadow-sm p-4 text-center hover:shadow-lg transition">
+          <img src="image/tcs.png" alt="TCS" class="h-12 mx-auto mb-3" />
+          <h3 class="font-semibold text-gray-900">Tata Consultancy Services</h3>
+          <p class="flex items-center justify-center text-sm text-gray-500 mt-1">
+            <span class="text-yellow-500 mr-1">★</span> 3.5 · 101.1K+ reviews
+          </p>
+          <p class="text-sm text-gray-600 mt-2">Explore challenging and exciting opportunities at TCS.</p>
+          <button class="mt-4 px-5 py-2 bg-blue-100 text-blue-600 font-medium rounded-full hover:bg-blue-200">
+            View jobs
+          </button>
+        </div>
+        <div class="bg-white border rounded-xl shadow-sm p-4 text-center hover:shadow-lg transition">
+          <img src="image/jio.png" alt="Jio" class="h-12 mx-auto mb-3" />
+          <h3 class="font-semibold text-gray-900">Jio</h3>
+          <p class="flex items-center justify-center text-sm text-gray-500 mt-1">
+            <span class="text-yellow-500 mr-1">★</span> 4.2 · 27.2K+ reviews
+          </p>
+          <p class="text-sm text-gray-600 mt-2">True 5G is here to unlock the limitless era.</p>
+          <button class="mt-4 px-5 py-2 bg-blue-100 text-blue-600 font-medium rounded-full hover:bg-blue-200">
+            View jobs
+          </button>
+        </div>
+        <div class="bg-white border rounded-xl shadow-sm p-4 text-center hover:shadow-lg transition">
+          <img src="image/intellect.png" alt="Intellect Design Arena" class="h-12 mx-auto mb-3" />
+          <h3 class="font-semibold text-gray-900">Intellect Design Arena</h3>
+          <p class="flex items-center justify-center text-sm text-gray-500 mt-1">
+            <span class="text-yellow-500 mr-1">★</span> 3.9 · 2.2K+ reviews
+          </p>
+          <p class="text-sm text-gray-600 mt-2">World's largest, future-ready Enterprise FinTech Company.</p>
+          <button class="mt-4 px-5 py-2 bg-blue-100 text-blue-600 font-medium rounded-full hover:bg-blue-200">
+            View jobs
+          </button>
+        </div>
+        <div class="bg-white border rounded-xl shadow-sm p-4 text-center hover:shadow-lg transition">
+          <img src="image/datamatics.png" alt="Datamatics" class="h-12 mx-auto mb-3" />
+          <h3 class="font-semibold text-gray-900">Datamatics</h3>
+          <p class="flex items-center justify-center text-sm text-gray-500 mt-1">
+            <span class="text-yellow-500 mr-1">★</span> 3.4 · 1.8K+ reviews
+          </p>
+          <p class="text-sm text-gray-600 mt-2">Global digital technology company.</p>
+          <button class="mt-4 px-5 py-2 bg-blue-100 text-blue-600 font-medium rounded-full hover:bg-blue-200">
+            View jobs
+          </button>
+        </div>
       </div>
-      <img src="image/interview-illustration.png" alt="Interview Illustration" class="rounded-xl">
+      <div class="text-center mt-8">
+        <button class="px-6 py-2 border border-blue-400 text-blue-500 rounded-full hover:bg-blue-50">
+          View all companies
+        </button>
+      </div>
     </div>
+  </section>
 
-    <!-- Middle - Companies -->
-    <div class="bg-white rounded-2xl shadow p-6 w-full lg:w-1/3">
-      <h3 class="text-lg font-semibold mb-4">Interview questions by company</h3>
+  <section class="flex flex-wrap items-center gap-6 bg-orange-50 p-6 rounded-xl">
+    <div class="flex-shrink-0 max-w-sm">
+      <img src="image/jobs-illustration.png" alt="Discover jobs illustration" class="w-60 h-auto" />
+      <h3 class="text-2xl font-bold mt-4 text-gray-900">Discover jobs across popular roles</h3>
+      <p class="text-gray-600 mt-2">Select a role and we'll show you relevant jobs for it!</p>
+    </div>
+    <div class="bg-white shadow-lg rounded-xl p-6 flex-1">
       <div class="grid grid-cols-2 gap-4">
-        
-        <div class="flex items-center border rounded-lg p-3 hover:shadow">
-          <img src="image/accenture.png" class="w-8 h-8 mr-3">
-          <div>
-            <p class="font-medium">Accenture</p>
-            <p class="text-sm text-gray-500">2K+ Interviews</p>
-          </div>
-        </div>
-        
-        <div class="flex items-center border rounded-lg p-3 hover:shadow">
-          <img src="image/cognizant.png" class="w-8 h-8 mr-3">
-          <div>
-            <p class="font-medium">Cognizant</p>
-            <p class="text-sm text-gray-500">1.6K+ Interviews</p>
-          </div>
-        </div>
-
-        <div class="flex items-center border rounded-lg p-3 hover:shadow">
-          <img src="image/tcs.png" class="w-8 h-8 mr-3">
-          <div>
-            <p class="font-medium">TCS</p>
-            <p class="text-sm text-gray-500">2.5K+ Interviews</p>
-          </div>
-        </div>
-
-        <div class="flex items-center border rounded-lg p-3 hover:shadow">
-          <img src="image/flipkart.png" class="w-8 h-8 mr-3">
-          <div>
-            <p class="font-medium">Flipkart</p>
-            <p class="text-sm text-gray-500">488 Interviews</p>
-          </div>
-        </div>
-
-        <div class="flex items-center border rounded-lg p-3 hover:shadow">
-          <img src="image/byjus.png" class="w-8 h-8 mr-3">
-          <div>
-            <p class="font-medium">Byjus</p>
-            <p class="text-sm text-gray-500">816 Interviews</p>
-          </div>
-        </div>
-
-        <div class="flex items-center border rounded-lg p-3 hover:shadow">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" class="w-8 h-8 mr-3">
-          <div>
-            <p class="font-medium">Amazon</p>
-            <p class="text-sm text-gray-500">1.7K+ Interviews</p>
-          </div>
-        </div>
-
+        <a href="#" class="flex justify-between items-center p-4 border rounded-lg hover:shadow-md">
+          <div><h4 class="font-semibold text-gray-900">Full Stack Developer</h4><p class="text-sm text-gray-500">20.7K+ Jobs</p></div>
+          <i class="fas fa-chevron-right text-gray-400"></i>
+        </a>
+        <a href="#" class="flex justify-between items-center p-4 border rounded-lg hover:shadow-md">
+          <div><h4 class="font-semibold text-gray-900">Mobile / App Developer</h4><p class="text-sm text-gray-500">3.1K+ Jobs</p></div>
+          <i class="fas fa-chevron-right text-gray-400"></i>
+        </a>
+        <a href="#" class="flex justify-between items-center p-4 border rounded-lg hover:shadow-md">
+          <div><h4 class="font-semibold text-gray-900">Front End Developer</h4><p class="text-sm text-gray-500">5.3K+ Jobs</p></div>
+          <i class="fas fa-chevron-right text-gray-400"></i>
+        </a>
+        <a href="#" class="flex justify-between items-center p-4 border rounded-lg hover:shadow-md">
+          <div><h4 class="font-semibold text-gray-900">DevOps Engineer</h4><p class="text-sm text-gray-500">3.2K+ Jobs</p></div>
+          <i class="fas fa-chevron-right text-gray-400"></i>
+        </a>
+        <a href="#" class="flex justify-between items-center p-4 border rounded-lg hover:shadow-md">
+          <div><h4 class="font-semibold text-gray-900">Engineering Manager</h4><p class="text-sm text-gray-500">1.6K+ Jobs</p></div>
+          <i class="fas fa-chevron-right text-gray-400"></i>
+        </a>
+        <a href="#" class="flex justify-between items-center p-4 border rounded-lg hover:shadow-md">
+          <div><h4 class="font-semibold text-gray-900">Technical Lead</h4><p class="text-sm text-gray-500">11.2K+ Jobs</p></div>
+          <i class="fas fa-chevron-right text-gray-400"></i>
+        </a>
       </div>
-      <a href="#" class="text-blue-600 text-sm mt-4 inline-block">View all companies →</a>
     </div>
+  </section>
 
-    <!-- Right - Roles -->
-    <div class="bg-white rounded-2xl shadow p-6 w-full lg:w-1/3">
-      <h3 class="text-lg font-semibold mb-4">Interview questions by role</h3>
-      <ul class="space-y-3">
-        <li><a href="#" class="flex justify-between hover:text-blue-600">Software Engineer <span class="text-gray-500">(7.2K+)</span></a></li>
-        <li><a href="#" class="flex justify-between hover:text-blue-600">Business Analyst <span class="text-gray-500">(2.8K+)</span></a></li>
-        <li><a href="#" class="flex justify-between hover:text-blue-600">Consultant <span class="text-gray-500">(2.4K+)</span></a></li>
-        <li><a href="#" class="flex justify-between hover:text-blue-600">Financial Analyst <span class="text-gray-500">(894)</span></a></li>
-        <li><a href="#" class="flex justify-between hover:text-blue-600">Sales & Marketing <span class="text-gray-500">(991)</span></a></li>
-        <li><a href="#" class="flex justify-between hover:text-blue-600">Quality Engineer <span class="text-gray-500">(1.3K+)</span></a></li>
-      </ul>
-      <a href="#" class="text-blue-600 text-sm mt-4 inline-block">View all roles →</a>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <section class="bg-white py-10 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-6">
+      <div class="bg-orange-50 rounded-2xl p-6 flex flex-col justify-between w-full lg:w-1/3">
+        <div>
+          <p class="text-sm text-gray-500 mb-3">by Proxima Skills</p>
+          <h2 class="text-2xl font-semibold mb-4">Prepare for your next interview</h2>
+        </div>
+        <img src="image/interview-illustration.png" alt="Interview Illustration" class="rounded-xl" />
+      </div>
+      <div class="bg-white rounded-2xl shadow p-6 w-full lg:w-1/3">
+        <h3 class="text-lg font-semibold mb-4">Interview questions by company</h3>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="flex items-center border rounded-lg p-3 hover:shadow">
+            <img src="image/accenture.png" class="w-8 h-8 mr-3" />
+            <div>
+              <p class="font-medium">Accenture</p>
+              <p class="text-sm text-gray-500">2K+ Interviews</p>
+            </div>
+          </div>
+          <div class="flex items-center border rounded-lg p-3 hover:shadow">
+            <img src="image/cognizant.png" class="w-8 h-8 mr-3" />
+            <div>
+              <p class="font-medium">Cognizant</p>
+              <p class="text-sm text-gray-500">1.6K+ Interviews</p>
+            </div>
+          </div>
+          <div class="flex items-center border rounded-lg p-3 hover:shadow">
+            <img src="image/tcs.png" class="w-8 h-8 mr-3" />
+            <div>
+              <p class="font-medium">TCS</p>
+              <p class="text-sm text-gray-500">2.5K+ Interviews</p>
+            </div>
+          </div>
+          <div class="flex items-center border rounded-lg p-3 hover:shadow">
+            <img src="image/flipkart.png" class="w-8 h-8 mr-3" />
+            <div>
+              <p class="font-medium">Flipkart</p>
+              <p class="text-sm text-gray-500">488 Interviews</p>
+            </div>
+          </div>
+          <div class="flex items-center border rounded-lg p-3 hover:shadow">
+            <img src="image/byjus.png" class="w-8 h-8 mr-3" />
+            <div>
+              <p class="font-medium">Byjus</p>
+              <p class="text-sm text-gray-500">816 Interviews</p>
+            </div>
+          </div>
+          <div class="flex items-center border rounded-lg p-3 hover:shadow">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" class="w-8 h-8 mr-3" />
+            <div>
+              <p class="font-medium">Amazon</p>
+              <p class="text-sm text-gray-500">1.7K+ Interviews</p>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="text-blue-600 text-sm mt-4 inline-block">View all companies →</a>
+      </div>
+      <div class="bg-white rounded-2xl shadow p-6 w-full lg:w-1/3">
+        <h3 class="text-lg font-semibold mb-4">Interview questions by role</h3>
+        <ul class="space-y-3">
+          <li>
+            <a href="#" class="flex justify-between hover:text-blue-600"
+              >Software Engineer <span class="text-gray-500">(7.2K+)</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="flex justify-between hover:text-blue-600"
+              >Business Analyst <span class="text-gray-500">(2.8K+)</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="flex justify-between hover:text-blue-600"
+              >Consultant <span class="text-gray-500">(2.4K+)</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="flex justify-between hover:text-blue-600"
+              >Financial Analyst <span class="text-gray-500">(894)</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="flex justify-between hover:text-blue-600"
+              >Sales & Marketing <span class="text-gray-500">(991)</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="flex justify-between hover:text-blue-600"
+              >Quality Engineer <span class="text-gray-500">(1.3K+)</span></a
+            >
+          </li>
+        </ul>
+        <a href="#" class="text-blue-600 text-sm mt-4 inline-block">View all roles →</a>
+      </div>
     </div>
+  </section>
 
-  </div>
-</section>
-
-
-<!-- SMALL SCRIPT: year + newsletter stub -->
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-  function handleNewsletter(e) {
-    e.preventDefault();
-    const email = document.getElementById('newsletter-email').value.trim();
-    const msg = document.getElementById('newsletter-msg');
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!re.test(email)) {
-      msg.classList.remove('text-emerald-300');
-      msg.classList.add('text-rose-400');
-      msg.textContent = 'Please enter a valid email address.';
-      msg.classList.remove('hidden');
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    function handleNewsletter(e) {
+      e.preventDefault();
+      const email = document.getElementById("newsletter-email").value.trim();
+      const msg = document.getElementById("newsletter-msg");
+      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!re.test(email)) {
+        msg.classList.remove("text-emerald-300");
+        msg.classList.add("text-rose-400");
+        msg.textContent = "Please enter a valid email address.";
+        msg.classList.remove("hidden");
+        return false;
+      }
+      msg.classList.remove("text-rose-400");
+      msg.classList.add("text-emerald-300");
+      msg.textContent = "Thanks — you have been subscribed!";
+      msg.classList.remove("hidden");
+      document.getElementById("newsletter-email").value = "";
       return false;
     }
-    msg.classList.remove('text-rose-400');
-    msg.classList.add('text-emerald-300');
-    msg.textContent = 'Thanks — you have been subscribed!';
-    msg.classList.remove('hidden');
-    document.getElementById('newsletter-email').value = '';
-    return false;
-  }
-</script>
-<script src="https://cdn.tailwindcss.com"></script>
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
 
-<footer class="bg-[#001f4d] text-slate-100">
-  <div class="max-w-7xl mx-auto px-6 py-10">
-    <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
-      
-      <!-- Logo & Social -->
-      <div class="md:col-span">
-        <a href="#" class="logo-link">
-             <img src="image/logo_transparent.png" alt="Proxima Logo" class="logo-img ">
-         </a>
-        <p class="mt-4 font-medium">Connect with us</p>
-        <div class="flex items-center gap-3 mt-3">
-          
-          <!-- Facebook -->
-          <a href="#" class="w-8 h-8 flex items-center justify-center bg-white/10 rounded">
-            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M22.675 0h-21.35C.597 0 0 .598 0 1.334v21.333C0 23.403.597 24 1.325 24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.466.099 2.797.143v3.24l-1.919.001c-1.504 0-1.796.715-1.796 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.403 24 24 23.403 24 22.667V1.334C24 .598 23.403 0 22.675 0z"/>
-            </svg>
+  <footer class="bg-[#001f4d] text-slate-100">
+    <div class="max-w-7xl mx-auto px-6 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+        <div class="md:col-span">
+          <a href="#" class="logo-link">
+            <img src="image/logo_transparent.png" alt="Proxima Logo" class="logo-img" />
           </a>
-
-          <!-- Instagram -->
-          <a href="#" class="w-8 h-8 flex items-center justify-center bg-white/10 rounded">
-            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2Zm0 1.5A4.26 4.26 0 0 0 3.5 7.75v8.5A4.26 4.26 0 0 0 7.75 20.5h8.5a4.26 4.26 0 0 0 4.25-4.25v-8.5A4.26 4.26 0 0 0 16.25 3.5h-8.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5A3.5 3.5 0 1 0 12 15a3.5 3.5 0 0 0 0-7Zm5.25-2.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z"/>
-            </svg>
-          </a>
-
-          <!-- Twitter -->
-          <a href="#" class="w-8 h-8 flex items-center justify-center bg-white/10 rounded">
-            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.27 4.27 0 0 0 1.88-2.37 8.48 8.48 0 0 1-2.7 1.03 4.24 4.24 0 0 0-7.23 3.87A12.03 12.03 0 0 1 3.15 4.6a4.24 4.24 0 0 0 1.31 5.66 4.19 4.19 0 0 1-1.92-.53v.05a4.24 4.24 0 0 0 3.4 4.16 4.3 4.3 0 0 1-1.91.07 4.25 4.25 0 0 0 3.96 2.94A8.5 8.5 0 0 1 2 19.54 12 12 0 0 0 8.29 21.5c7.55 0 11.68-6.26 11.68-11.68 0-.18 0-.35-.01-.53A8.34 8.34 0 0 0 22.46 6Z"/>
-            </svg>
-          </a>
-
-          <!-- LinkedIn -->
-          <a href="#" class="w-8 h-8 flex items-center justify-center bg-white/10 rounded">
-            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M4.98 3.5a2.4 2.4 0 1 1 0 4.8 2.4 2.4 0 0 1 0-4.8ZM3 8.98h4v12H3v-12ZM9 8.98h3.83v1.64h.05c.53-1 1.82-2.06 3.75-2.06 3.67 0 4.37 1.44 4.37 4.54V21h-4v-6.02c0-1.44-.03-3.3-2.01-3.3-2 0-2.3 1.56-2.3 3.18V21H9v-12Z"/>
-            </svg>
-          </a>
+          <p class="mt-4 font-medium">         
+            Empowering careers and transforming businesses through innovative workforce solutions.
+          </p>
+          <div class="flex items-center gap-3 mt-3">
+            <a href="#" class="w-8 h-8 flex items-center justify-center bg-white/10 rounded">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M22.675 0h-21.35C.597 0 0 .598 0 1.334v21.333C0 23.403.597 24 1.325 24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.466.099 2.797.143v3.24l-1.919.001c-1.504 0-1.796.715-1.796 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.403 24 24 23.403 24 22.667V1.334C24 .598 23.403 0 22.675 0z"/></svg>
+            </a>
+            <a href="#" class="w-8 h-8 flex items-center justify-center bg-white/10 rounded">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2Zm0 1.5A4.26 4.26 0 0 0 3.5 7.75v8.5A4.26 4.26 0 0 0 7.75 20.5h8.5a4.26 4.26 0 0 0 4.25-4.25v-8.5A4.26 4.26 0 0 0 16.25 3.5h-8.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5A3.5 3.5 0 1 0 12 15a3.5 3.5 0 0 0 0-7Zm5.25-2.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z"/></svg>
+            </a>
+            <a href="#" class="w-8 h-8 flex items-center justify-center bg-white/10 rounded">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.27 4.27 0 0 0 1.88-2.37 8.48 8.48 0 0 1-2.7 1.03 4.24 4.24 0 0 0-7.23 3.87A12.03 12.03 0 0 1 3.15 4.6a4.24 4.24 0 0 0 1.31 5.66 4.19 4.19 0 0 1-1.92-.53v.05a4.24 4.24 0 0 0 3.4 4.16 4.3 4.3 0 0 1-1.91.07 4.25 4.25 0 0 0 3.96 2.94A8.5 8.5 0 0 1 2 19.54 12 12 0 0 0 8.29 21.5c7.55 0 11.68-6.26 11.68-11.68 0-.18 0-.35-.01-.53A8.34 8.34 0 0 0 22.46 6Z"/></svg>
+            </a>
+            <a href="#" class="w-8 h-8 flex items-center justify-center bg-white/10 rounded">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.4 2.4 0 1 1 0 4.8 2.4 2.4 0 0 1 0-4.8ZM3 8.98h4v12H3v-12ZM9 8.98h3.83v1.64h.05c.53-1 1.82-2.06 3.75-2.06 3.67 0 4.37 1.44 4.37 4.54V21h-4v-6.02c0-1.44-.03-3.3-2.01-3.3-2 0-2.3 1.56-2.3 3.18V21H9v-12Z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <ul class="space-y-2 text-slate-200">
+            <li><a href="about.html" class="hover:underline">About us</a></li>
+            <li><a href="#" class="hover:underline">Careers</a></li>
+            <li><a href="for-employer.html" class="hover:underline">Employer Home</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="space-y-2 text-slate-200">
+            <li><a href="#" class="hover:underline">Help center</a></li>
+            <li><a href="#" class="hover:underline">Grievances</a></li>
+            <li><a href="#" class="hover:underline">Report issue</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="space-y-2 text-slate-200">
+            <li><a href="#" class="hover:underline">Privacy policy</a></li>
+            <li><a href="#" class="hover:underline">Terms &amp; Conditions</a></li>
+            <li><a href="#" class="hover:underline">Fraud alert</a></li>
+            <li><a href="#" class="hover:underline">Trust &amp; Safety</a></li>
+          </ul>
+    </div>
+        <div class="text-left">
+          <h4 class="font-semibold text-white">Apply on the go</h4>
+          <p class="text-slate-300 text-sm mt-1">Get real-time job updates on our App</p>
+          <div class="flex gap-2 mt-4">
+            <a href="#" class="inline-block">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" class="h-10" />
+            </a>
+            <a href="#" class="inline-block">
+              <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" class="h-10" />
+            </a>
+          </div>
         </div>
       </div>
-
-      <!-- Column 1 -->
-      <div>
-        <ul class="space-y-2 text-slate-200">
-          <li><a href="about.html" class="hover:underline">About us</a></li>
-          <li><a href="#" class="hover:underline">Careers</a></li>
-          <li><a href="for-employer.html" class="hover:underline">Employer Home</a></li>
-          <li><a href="#" class="hover:underline">Sitemap</a></li>
-          <li><a href="#" class="hover:underline">Credits</a></li>
-        </ul>
-      </div>
-
-      <!-- Column 2 -->
-      <div>
-        <ul class="space-y-2 text-slate-200">
-          <li><a href="#" class="hover:underline">Help center</a></li>
-          <li><a href="#" class="hover:underline">Summons/Notices</a></li>
-          <li><a href="#" class="hover:underline">Grievances</a></li>
-          <li><a href="#" class="hover:underline">Report issue</a></li>
-        </ul>
-      </div>
-
-      <!-- Column 3 -->
-      <div>
-        <ul class="space-y-2 text-slate-200">
-          <li><a href="#" class="hover:underline">Privacy policy</a></li>
-          <li><a href="#" class="hover:underline">Terms &amp; Conditions</a></li>
-          <li><a href="#" class="hover:underline">Fraud alert</a></li>
-          <li><a href="#" class="hover:underline">Trust &amp; Safety</a></li>
-        </ul>
-      </div>
-
-      <!-- App Download -->
-      <div class="text-left">
-        <h4 class="font-semibold text-white">Apply on the go</h4>
-        <p class="text-slate-300 text-sm mt-1">Get real-time job updates on our App</p>
-        <div class="flex gap-2 mt-4">
-          <a href="#" class="inline-block">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" class="h-10">
-          </a>
-          <a href="#" class="inline-block">
-            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" class="h-10">
-          </a>
-        </div>
+      <div class="border-t border-gray-700 mt-8 pt-4 text-center text-sm">
+        © 2025 Proxima – All Rights Reserved | <a href="#" class="hover:underline">Terms</a> | <a href="#" class="hover:underline">Privacy</a>
       </div>
     </div>
+  </footer>
 
-    <!-- Bottom -->
-    <div class="border-t border-gray-700 mt-8 pt-4 text-center text-sm">
-    © 2025 Proxima – All Rights Reserved | <a href="#" class="hover:underline">Terms</a> | <a href="#" class="hover:underline">Privacy</a>
-    </div>
-     </div>
-    </footer>
-
-    <script>
-       document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-
-  </body>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
