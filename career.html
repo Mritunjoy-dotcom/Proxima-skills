@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Careers — Jobsfind4u</title>
+  <meta name="description" content="Join Jobsfind4u. Explore open roles, benefits, and our hiring process." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="image/portal logo.png" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui']
+          },
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              200: '#c7d2fe',
+              300: '#a5b4fc',
+              400: '#818cf8',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+              800: '#3730a3',
+              900: '#312e81'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+  <!-- Top Bar -->
+  <header class="bg-white/80 backdrop-blur sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#" class="logo-link">
+               <img src="image/portal logo.png" alt="Jobsfind4u Logo" class="logo-img h-16 w-auto">
+        </a>
+        <nav class="hidden sm:flex items-center gap-6 text-sm">
+          <a href="#open-roles" class="hover:text-brand-600">Open Roles</a>
+          <a href="#benefits" class="hover:text-brand-600">Benefits</a>
+          <a href="#culture" class="hover:text-brand-600">Culture</a>
+          <a href="#process" class="hover:text-brand-600">Hiring Process</a>
+          <a href="#faq" class="hover:text-brand-600">FAQ</a>
+        </nav>
+        <a href="#open-roles" class="inline-flex items-center rounded-xl bg-brand-600 px-4 py-2 text-white text-sm font-medium shadow hover:bg-brand-700">View Jobs</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-brand-50 to-white"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <span class="inline-flex items-center gap-2 rounded-full bg-brand-100 px-3 py-1 text-brand-700 text-xs font-semibold">We’re hiring across India</span>
+          <h1 class="mt-4 text-4xl sm:text-5xl font-extrabold leading-tight tracking-tight">Build the future of careers with <span class="text-brand-600">Jobsfind4u</span></h1>
+          <p class="mt-4 text-gray-600 text-base sm:text-lg">We help people upskill and find meaningful work. Join our mission-driven team of builders, mentors, and creators.</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#open-roles" class="inline-flex items-center rounded-xl bg-brand-600 px-5 py-3 text-white font-semibold shadow hover:bg-brand-700">See open roles</a>
+            <a href="#life" class="inline-flex items-center rounded-xl bg-white px-5 py-3 text-gray-900 font-semibold ring-1 ring-gray-200 hover:ring-gray-300">Life at Proxima</a>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="aspect-[4/3] rounded-2xl bg-white shadow-xl ring-1 ring-gray-100 p-6">
+            <div class="grid grid-cols-3 gap-4 h-full">
+              <div class="rounded-xl bg-brand-50"></div>
+              <div class="rounded-xl bg-brand-100"></div>
+              <div class="rounded-xl bg-brand-200"></div>
+              <div class="col-span-2 rounded-xl bg-brand-200"></div>
+              <div class="rounded-xl bg-brand-300"></div>
+              <div class="rounded-xl bg-brand-100"></div>
+              <div class="rounded-xl bg-brand-50"></div>
+              <div class="rounded-xl bg-brand-300"></div>
+            </div>
+          </div>
+          <p class="text-xs text-gray-500 mt-3">A snapshot of our product pods, mentorship sessions, and community events.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="rounded-2xl bg-white p-6 shadow ring-1 ring-gray-100 text-center">
+          <div class="text-3xl font-extrabold">2M+</div>
+          <div class="text-sm text-gray-500 mt-1">Learners served</div>
+        </div>
+        <div class="rounded-2xl bg-white p-6 shadow ring-1 ring-gray-100 text-center">
+          <div class="text-3xl font-extrabold">150+</div>
+          <div class="text-sm text-gray-500 mt-1">Hiring partners</div>
+        </div>
+        <div class="rounded-2xl bg-white p-6 shadow ring-1 ring-gray-100 text-center">
+          <div class="text-3xl font-extrabold">100%</div>
+          <div class="text-sm text-gray-500 mt-1">Remote-friendly</div>
+        </div>
+        <div class="rounded-2xl bg-white p-6 shadow ring-1 ring-gray-100 text-center">
+          <div class="text-3xl font-extrabold">4.7★</div>
+          <div class="text-sm text-gray-500 mt-1">Team satisfaction</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filters + Open Roles -->
+  <section id="open-roles" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
+        <div>
+          <h2 class="text-3xl font-bold tracking-tight">Open roles</h2>
+          <p class="mt-1 text-gray-600">Search by title, filter by team, location, and work type.</p>
+        </div>
+        <div class="flex flex-wrap gap-3 items-center">
+          <input id="searchInput" type="text" placeholder="Search roles…" class="w-72 rounded-xl border-gray-300 focus:border-brand-600 focus:ring-brand-600">
+          <select id="deptFilter" class="rounded-xl border-gray-300 focus:border-brand-600 focus:ring-brand-600">
+            <option value="">All teams</option>
+            <option>Engineering</option>
+            <option>Design</option>
+            <option>Product</option>
+            <option>Marketing</option>
+            <option>Sales</option>
+            <option>Operations</option>
+          </select>
+          <select id="locFilter" class="rounded-xl border-gray-300 focus:border-brand-600 focus:ring-brand-600">
+            <option value="">All locations</option>
+            <option>Remote (India)</option>
+            <option>Kolkata</option>
+            <option>Bengaluru</option>
+            <option>Hyderabad</option>
+            <option>Delhi NCR</option>
+          </select>
+          <select id="typeFilter" class="rounded-xl border-gray-300 focus:border-brand-600 focus:ring-brand-600">
+            <option value="">All types</option>
+            <option>Full-time</option>
+            <option>Part-time</option>
+            <option>Internship</option>
+            <option>Contract</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="jobsGrid" class="mt-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+        <!-- Job Card Template Items -->
+        <article class="job-card rounded-2xl border border-gray-100 bg-white p-6 shadow-sm hover:shadow-md transition" data-title="Frontend Engineer" data-dept="Engineering" data-loc="Remote (India)" data-type="Full-time">
+          <div class="flex items-center justify-between gap-4">
+            <div>
+              <h3 class="text-lg font-semibold">Frontend Engineer</h3>
+              <p class="text-sm text-gray-500">Engineering • Remote (India) • Full-time</p>
+            </div>
+            <span class="rounded-full bg-brand-100 text-brand-700 text-xs font-semibold px-3 py-1">Mid–Senior</span>
+          </div>
+          <p class="mt-3 text-sm text-gray-600">Build delightful, accessible UI with Tailwind and modern frameworks. You obsess over performance and DX.</p>
+          <div class="mt-4 flex items-center gap-3 text-sm text-gray-600">
+            <span>₹18–28 LPA</span>
+            <span aria-hidden>•</span>
+            <span>ESOPs</span>
+          </div>
+          <div class="mt-5 flex items-center gap-3">
+            <button class="job-more inline-flex items-center rounded-xl bg-gray-900 px-4 py-2 text-white text-sm">View details</button>
+            <a href="#apply" class="inline-flex items-center rounded-xl px-4 py-2 ring-1 ring-gray-300 text-sm font-medium hover:bg-gray-50">Apply</a>
+          </div>
+        </article>
+
+        <article class="job-card rounded-2xl border border-gray-100 bg-white p-6 shadow-sm hover:shadow-md transition" data-title="Product Designer" data-dept="Design" data-loc="Bengaluru" data-type="Full-time">
+          <div class="flex items-center justify-between gap-4">
+            <div>
+              <h3 class="text-lg font-semibold">Product Designer</h3>
+              <p class="text-sm text-gray-500">Design • Bengaluru • Full-time</p>
+            </div>
+            <span class="rounded-full bg-brand-100 text-brand-700 text-xs font-semibold px-3 py-1">Mid–Senior</span>
+          </div>
+          <p class="mt-3 text-sm text-gray-600">Craft end-to-end product experiences from discovery to delivery. Strong UX systems thinking required.</p>
+          <div class="mt-4 flex items-center gap-3 text-sm text-gray-600">
+            <span>₹16–24 LPA</span>
+            <span aria-hidden>•</span>
+            <span>Hybrid</span>
+          </div>
+          <div class="mt-5 flex items-center gap-3">
+            <button class="job-more inline-flex items-center rounded-xl bg-gray-900 px-4 py-2 text-white text-sm">View details</button>
+            <a href="#apply" class="inline-flex items-center rounded-xl px-4 py-2 ring-1 ring-gray-300 text-sm font-medium hover:bg-gray-50">Apply</a>
+          </div>
+        </article>
+
+        <article class="job-card rounded-2xl border border-gray-100 bg-white p-6 shadow-sm hover:shadow-md transition" data-title="Growth Marketer" data-dept="Marketing" data-loc="Remote (India)" data-type="Full-time">
+          <div class="flex items-center justify-between gap-4">
+            <div>
+              <h3 class="text-lg font-semibold">Growth Marketer</h3>
+              <p class="text-sm text-gray-500">Marketing • Remote (India) • Full-time</p>
+            </div>
+            <span class="rounded-full bg-brand-100 text-brand-700 text-xs font-semibold px-3 py-1">Mid</span>
+          </div>
+          <p class="mt-3 text-sm text-gray-600">Own growth loops, campaigns, experiments, and analytics across channels. Prior edtech experience is a plus.</p>
+          <div class="mt-4 flex items-center gap-3 text-sm text-gray-600">
+            <span>₹12–20 LPA</span>
+            <span aria-hidden>•</span>
+            <span>Performance bonus</span>
+          </div>
+          <div class="mt-5 flex items-center gap-3">
+            <button class="job-more inline-flex items-center rounded-xl bg-gray-900 px-4 py-2 text-white text-sm">View details</button>
+            <a href="#apply" class="inline-flex items-center rounded-xl px-4 py-2 ring-1 ring-gray-300 text-sm font-medium hover:bg-gray-50">Apply</a>
+          </div>
+        </article>
+
+        <article class="job-card rounded-2xl border border-gray-100 bg-white p-6 shadow-sm hover:shadow-md transition" data-title="Backend Engineer" data-dept="Engineering" data-loc="Hyderabad" data-type="Full-time">
+          <div class="flex items-center justify-between gap-4">
+            <div>
+              <h3 class="text-lg font-semibold">Backend Engineer</h3>
+              <p class="text-sm text-gray-500">Engineering • Hyderabad • Full-time</p>
+            </div>
+            <span class="rounded-full bg-brand-100 text-brand-700 text-xs font-semibold px-3 py-1">Senior</span>
+          </div>
+          <p class="mt-3 text-sm text-gray-600">Design resilient services and APIs. Experience with Node.js, MongoDB, and cloud infra required.</p>
+          <div class="mt-4 flex items-center gap-3 text-sm text-gray-600">
+            <span>₹22–35 LPA</span>
+            <span aria-hidden>•</span>
+            <span>ESOPs</span>
+          </div>
+          <div class="mt-5 flex items-center gap-3">
+            <button class="job-more inline-flex items-center rounded-xl bg-gray-900 px-4 py-2 text-white text-sm">View details</button>
+            <a href="#apply" class="inline-flex items-center rounded-xl px-4 py-2 ring-1 ring-gray-300 text-sm font-medium hover:bg-gray-50">Apply</a>
+          </div>
+        </article>
+
+        <article class="job-card rounded-2xl border border-gray-100 bg-white p-6 shadow-sm hover:shadow-md transition" data-title="Campus Ambassador" data-dept="Operations" data-loc="Kolkata" data-type="Internship">
+          <div class="flex items-center justify-between gap-4">
+            <div>
+              <h3 class="text-lg font-semibold">Campus Ambassador</h3>
+              <p class="text-sm text-gray-500">Operations • Kolkata • Internship</p>
+            </div>
+            <span class="rounded-full bg-brand-100 text-brand-700 text-xs font-semibold px-3 py-1">Intern</span>
+          </div>
+          <p class="mt-3 text-sm text-gray-600">Champion Proxima on campus, host events, and grow our student community. Stipend + certificates.</p>
+          <div class="mt-4 flex items-center gap-3 text-sm text-gray-600">
+            <span>₹10–20k / month</span>
+            <span aria-hidden>•</span>
+            <span>3–6 months</span>
+          </div>
+          <div class="mt-5 flex items-center gap-3">
+            <button class="job-more inline-flex items-center rounded-xl bg-gray-900 px-4 py-2 text-white text-sm">View details</button>
+            <a href="#apply" class="inline-flex items-center rounded-xl px-4 py-2 ring-1 ring-gray-300 text-sm font-medium hover:bg-gray-50">Apply</a>
+          </div>
+        </article>
+
+        <article class="job-card rounded-2xl border border-gray-100 bg-white p-6 shadow-sm hover:shadow-md transition" data-title="Partnerships Manager" data-dept="Sales" data-loc="Delhi NCR" data-type="Full-time">
+          <div class="flex items-center justify-between gap-4">
+            <div>
+              <h3 class="text-lg font-semibold">Partnerships Manager</h3>
+              <p class="text-sm text-gray-500">Sales • Delhi NCR • Full-time</p>
+            </div>
+            <span class="rounded-full bg-brand-100 text-brand-700 text-xs font-semibold px-3 py-1">Lead</span>
+          </div>
+          <p class="mt-3 text-sm text-gray-600">Build and scale relationships with enterprise hiring partners. Strong communication and CRM skills.</p>
+          <div class="mt-4 flex items-center gap-3 text-sm text-gray-600">
+            <span>₹18–30 LPA</span>
+            <span aria-hidden>•</span>
+            <span>Incentives</span>
+          </div>
+          <div class="mt-5 flex items-center gap-3">
+            <button class="job-more inline-flex items-center rounded-xl bg-gray-900 px-4 py-2 text-white text-sm">View details</button>
+            <a href="#apply" class="inline-flex items-center rounded-xl px-4 py-2 ring-1 ring-gray-300 text-sm font-medium hover:bg-gray-50">Apply</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Empty state -->
+      <div id="emptyState" class="hidden mt-10 text-center">
+        <div class="inline-flex items-center justify-center rounded-2xl bg-gray-100 h-20 w-20 mx-auto">🔎</div>
+        <h4 class="mt-4 text-xl font-semibold">No roles match your filters</h4>
+        <p class="text-gray-600">Try clearing a filter or searching a different keyword.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section id="benefits" class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl font-bold tracking-tight">Benefits & perks</h2>
+        <p class="mt-2 text-gray-600">We invest in your growth, wellness, and life outside work.</p>
+      </div>
+      <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="rounded-2xl bg-white p-6 shadow ring-1 ring-gray-100">
+          <h3 class="font-semibold">Competitive pay & ESOPs</h3>
+          <p class="mt-1 text-sm text-gray-600">We benchmark compensation and offer meaningful ownership.</p>
+        </div>
+        <div class="rounded-2xl bg-white p-6 shadow ring-1 ring-gray-100">
+          <h3 class="font-semibold">Remote-first setup</h3>
+          <p class="mt-1 text-sm text-gray-600">WFH with office hubs across major Indian cities.</p>
+        </div>
+        <div class="rounded-2xl bg-white p-6 shadow ring-1 ring-gray-100">
+          <h3 class="font-semibold">Learning stipend</h3>
+          <p class="mt-1 text-sm text-gray-600">Budget for courses, books, and conferences.</p>
+        </div>
+        <div class="rounded-2xl bg-white p-6 shadow ring-1 ring-gray-100">
+          <h3 class="font-semibold">Flexible leave</h3>
+          <p class="mt-1 text-sm text-gray-600">Take time off when you need it—no questions asked.</p>
+        </div>
+        <div class="rounded-2xl bg-white p-6 shadow ring-1 ring-gray-100">
+          <h3 class="font-semibold">Health insurance</h3>
+          <p class="mt-1 text-sm text-gray-600">Coverage for you and your family.</p>
+        </div>
+        <div class="rounded-2xl bg-white p-6 shadow ring-1 ring-gray-100">
+          <h3 class="font-semibold">Team retreats</h3>
+          <p class="mt-1 text-sm text-gray-600">Bi-annual offsites to connect and recharge.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Culture / Life at Proxima -->
+  <section id="culture" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-10 items-start">
+        <div>
+          <h2 class="text-3xl font-bold tracking-tight" id="life">Life at Proxima</h2>
+          <p class="mt-2 text-gray-600">We value ownership, candor, and craftsmanship. You’ll work with kind, ambitious people who care deeply about learners.</p>
+          <ul class="mt-6 space-y-3 text-sm text-gray-700 list-disc list-inside">
+            <li>Small, autonomous product pods</li>
+            <li>Weekly demos & show-and-tell</li>
+            <li>Mentorship and growth pathways</li>
+            <li>Bias for shipping and learning</li>
+          </ul>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="aspect-[4/3] rounded-2xl bg-gray-100"></div>
+          <div class="aspect-[4/3] rounded-2xl bg-gray-100"></div>
+          <div class="aspect-[4/3] rounded-2xl bg-gray-100"></div>
+          <div class="aspect-[4/3] rounded-2xl bg-gray-100"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hiring Process -->
+  <section id="process" class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl font-bold tracking-tight">Our hiring process</h2>
+        <p class="mt-2 text-gray-600">Designed to be fast, fair, and focused on real skills.</p>
+      </div>
+      <ol class="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <li class="rounded-2xl bg-white p-6 shadow ring-1 ring-gray-100">
+          <div class="text-xs text-gray-500">Step 1</div>
+          <h3 class="font-semibold">Apply</h3>
+          <p class="mt-1 text-sm text-gray-600">Share your resume/portfolio and a short note.</p>
+        </li>
+        <li class="rounded-2xl bg-white p-6 shadow ring-1 ring-gray-100">
+          <div class="text-xs text-gray-500">Step 2</div>
+          <h3 class="font-semibold">Intro call</h3>
+          <p class="mt-1 text-sm text-gray-600">30-min chat about your goals and role fit.</p>
+        </li>
+        <li class="rounded-2xl bg-white p-6 shadow ring-1 ring-gray-100">
+          <div class="text-xs text-gray-500">Step 3</div>
+          <h3 class="font-semibold">Skills assessment</h3>
+          <p class="mt-1 text-sm text-gray-600">A practical task or pair session with the team.</p>
+        </li>
+        <li class="rounded-2xl bg-white p-6 shadow ring-1 ring-gray-100">
+          <div class="text-xs text-gray-500">Step 4</div>
+          <h3 class="font-semibold">Offer</h3>
+          <p class="mt-1 text-sm text-gray-600">We move quickly and give clear feedback.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl font-bold tracking-tight">FAQ</h2>
+        <p class="mt-2 text-gray-600">Answers to common questions about working here.</p>
+      </div>
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <details class="rounded-2xl bg-white p-6 shadow ring-1 ring-gray-100 group">
+          <summary class="cursor-pointer font-semibold list-none flex items-center justify-between">Do you hire remotely?
+            <span class="text-gray-400 group-open:rotate-180 transition">▾</span>
+          </summary>
+          <p class="mt-2 text-sm text-gray-600">Yes, we are remote-first across India with optional office hubs.</p>
+        </details>
+        <details class="rounded-2xl bg-white p-6 shadow ring-1 ring-gray-100 group">
+          <summary class="cursor-pointer font-semibold list-none flex items-center justify-between">What’s the interview timeline?
+            <span class="text-gray-400 group-open:rotate-180 transition">▾</span>
+          </summary>
+          <p class="mt-2 text-sm text-gray-600">Usually 1–2 weeks depending on role and availability.</p>
+        </details>
+        <details class="rounded-2xl bg-white p-6 shadow ring-1 ring-gray-100 group">
+          <summary class="cursor-pointer font-semibold list-none flex items-center justify-between">Can I apply to multiple roles?
+            <span class="text-gray-400 group-open:rotate-180 transition">▾</span>
+          </summary>
+          <p class="mt-2 text-sm text-gray-600">Absolutely. We’ll consider you for the best fit.</p>
+        </details>
+        <details class="rounded-2xl bg-white p-6 shadow ring-1 ring-gray-100 group">
+          <summary class="cursor-pointer font-semibold list-none flex items-center justify-between">Do you offer internships?
+            <span class="text-gray-400 group-open:rotate-180 transition">▾</span>
+          </summary>
+          <p class="mt-2 text-sm text-gray-600">Yes—engineering, design, marketing, and operations.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Apply CTA -->
+  <section id="apply" class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold tracking-tight">Ready to apply?</h2>
+      <p class="mt-2 text-gray-600">Send your resume (PDF) and a short note telling us why you’d be great for the role.</p>
+      <div class="mt-6 flex items-center justify-center gap-3">
+        <a href="mailto:careers@proximaskills.com?subject=Job%20Application&body=Hi%20Proxima%20Skills%20Team%2C%0A%0ARole%3A%20%0ALocation%3A%20%0ANotice%20Period%3A%20%0AExpected%20CTC%3A%20%0A%0ARegards%2C%0A" class="inline-flex items-center rounded-xl bg-brand-600 px-5 py-3 text-white font-semibold shadow hover:bg-brand-700">Email your resume</a>
+        <a href="#open-roles" class="inline-flex items-center rounded-xl px-5 py-3 ring-1 ring-gray-300 font-semibold hover:bg-gray-50">Browse roles</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-sm">
+        <div>
+          <div class="flex items-center gap-2">
+            <a href="#" class="logo-link">
+      <img src="image/portal logo.png" alt="Jobsfind4u Logo" class="logo-img h-12 w-auto">
+    </a>
+          </div>
+          <p class="mt-3 text-gray-600">Empowering people with skills and opportunities.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold">Company</h4>
+          <ul class="mt-2 space-y-2 text-gray-600">
+            <li><a href="#" class="hover:text-brand-600">About</a></li>
+            <li><a href="#open-roles" class="hover:text-brand-600">Careers</a></li>
+            <li><a href="#" class="hover:text-brand-600">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold">Resources</h4>
+          <ul class="mt-2 space-y-2 text-gray-600">
+            <li><a href="#" class="hover:text-brand-600">Help Center</a></li>
+            <li><a href="#" class="hover:text-brand-600">Community</a></li>
+            <li><a href="#" class="hover:text-brand-600">Press</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold">Contact</h4>
+          <ul class="mt-2 space-y-2 text-gray-600">
+            <li><a href="mailto:careers@proximaskills.com" class="hover:text-brand-600">careers@proximaskills.com</a></li>
+            <li>BHIVE Workspace - No.112, AKR Tech Park, "A" and "B" Block, 7th Mile Hosur Rd, Krishna Reddy Industrial Area, Bengaluru, Karnataka-560068</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-8 flex items-center justify-between text-xs text-gray-500">
+        <p>© <span id="year"></span> Proxima Skills. All rights reserved.</p>
+        <a href="#" class="hover:text-gray-700">Privacy & Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Job Details Modal -->
+  <div id="jobModal" class="fixed inset-0 z-[60] hidden">
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="relative mx-auto mt-16 max-w-2xl rounded-2xl bg-white p-6 shadow-xl">
+      <div class="flex items-start justify-between gap-6">
+        <div>
+          <h3 id="modalTitle" class="text-2xl font-bold">Job Title</h3>
+          <p id="modalMeta" class="mt-1 text-sm text-gray-500">Team • Location • Type</p>
+        </div>
+        <button id="modalClose" class="ml-auto rounded-full p-2 hover:bg-gray-100">✕</button>
+      </div>
+      <div id="modalBody" class="mt-4 space-y-4 text-sm text-gray-700">
+        <p>Impact you’ll have</p>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Own end-to-end features with measurable outcomes.</li>
+          <li>Collaborate cross-functionally with Product & Design.</li>
+          <li>Ship iteratively and improve based on feedback.</li>
+        </ul>
+        <p class="pt-2">What we’re looking for</p>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Strong fundamentals in your craft.</li>
+          <li>Clear communication and ownership mindset.</li>
+          <li>Portfolio or GitHub that shows real work.</li>
+        </ul>
+      </div>
+      <div class="mt-6 flex items-center justify-end gap-3">
+        <a href="#apply" class="inline-flex items-center rounded-xl bg-brand-600 px-4 py-2 text-white text-sm font-semibold hover:bg-brand-700">Apply now</a>
+        <button id="modalClose2" class="inline-flex items-center rounded-xl px-4 py-2 ring-1 ring-gray-300 text-sm font-medium hover:bg-gray-50">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple filtering
+    const searchInput = document.getElementById('searchInput');
+    const deptFilter = document.getElementById('deptFilter');
+    const locFilter = document.getElementById('locFilter');
+    const typeFilter = document.getElementById('typeFilter');
+    const jobsGrid = document.getElementById('jobsGrid');
+    const emptyState = document.getElementById('emptyState');
+
+    function applyFilters() {
+      const q = searchInput.value.toLowerCase();
+      const dept = deptFilter.value;
+      const loc = locFilter.value;
+      const type = typeFilter.value;
+
+      let visible = 0;
+      jobsGrid.querySelectorAll('.job-card').forEach(card => {
+        const title = card.dataset.title.toLowerCase();
+        const matchQ = !q || title.includes(q);
+        const matchDept = !dept || card.dataset.dept === dept;
+        const matchLoc = !loc || card.dataset.loc === loc;
+        const matchType = !type || card.dataset.type === type;
+        const show = matchQ && matchDept && matchLoc && matchType;
+        card.style.display = show ? '' : 'none';
+        if (show) visible++;
+      });
+
+      emptyState.classList.toggle('hidden', visible !== 0);
+    }
+
+    [searchInput, deptFilter, locFilter, typeFilter].forEach(el => {
+      el.addEventListener('input', applyFilters);
+      el.addEventListener('change', applyFilters);
+    });
+
+    // Modal logic
+    const modal = document.getElementById('jobModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalMeta = document.getElementById('modalMeta');
+
+    document.querySelectorAll('.job-more').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const card = e.target.closest('.job-card');
+        const title = card.querySelector('h3').textContent;
+        const meta = card.querySelector('p.text-sm.text-gray-500').textContent;
+        modalTitle.textContent = title;
+        modalMeta.textContent = meta;
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    function closeModal() {
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    document.getElementById('modalClose').addEventListener('click', closeModal);
+    document.getElementById('modalClose2').addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+
+    // Initial
+    applyFilters();
+  </script>
+</body>
+</html>
